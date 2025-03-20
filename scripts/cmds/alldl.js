@@ -15,7 +15,7 @@ module.exports.config = {
   version: "1.6.9",
   author: "Nazrul",
   role: 0,
-  description: "Download videos from YouTube, TikTok, Facebook, Instagram Etc.",
+  description: "Download videos from YouTube, TikTok, Facebook, Instagram",
   category: "media",
   countDown: 3,
   guide: {
@@ -207,4 +207,121 @@ module.exports.onStart = async ({ api, event, args, message }) => {
     apiName: "alldl",
   },
   shared: {
-    regex: /(?:https?:\/\/)?(?:www\.)?4shared\.com/
+    regex: /(?:https?:\/\/)?(?:www\.)?4shared\.com/,
+    apiName: "alldl",
+  },
+  SendSpace: {
+    regex: /(?:https?:\/\/)?(?:www\.)?sendspace\.com/,
+    apiName: "alldl",
+  },
+  UsersCloud: {
+    regex: /(?:https?:\/\/)?(?:www\.)?userscloud\.com/,
+    apiName: "alldl",
+  },
+  Uploadhaven: {
+    regex: /(?:https?:\/\/)?(?:www\.)?uploadhaven\.com/,
+    apiName: "alldl",
+  },
+  Turbobit: {
+    regex: /(?:https?:\/\/)?(?:www\.)?turbobit\.net/,
+    apiName: "alldl",
+  },
+  FileBeam: {
+    regex: /(?:https?:\/\/)?(?:www\.)?filebeam\.com/,
+    apiName: "alldl",
+  },
+  StreamSB: {
+    regex: /(?:https?:\/\/)?(?:www\.)?streamsbs\.com/,
+    apiName: "alldl",
+  },
+  BayFiles: {
+    regex: /(?:https?:\/\/)?(?:www\.)?bayfiles\.com/,
+    apiName: "alldl",
+  },
+  UploadFiles: {
+    regex: /(?:https?:\/\/)?(?:www\.)?uploadfiles\.io/,
+    apiName: "alldl",
+  },
+  SolidFiles: {
+    regex: /(?:https?:\/\/)?(?:www\.)?solidfiles\.com/,
+    apiName: "alldl",
+  },
+  FileSend: {
+    regex: /(?:https?:\/\/)?(?:www\.)?filesend\.net/,
+    apiName: "alldl",
+  },
+  StreamCloud: {
+    regex: /(?:https?:\/\/)?(?:www\.)?streamcloud\.eu/,
+    apiName: "alldl",
+  },
+  CloudMail: {
+    regex: /(?:https?:\/\/)?(?:www\.)?cloudmail\.ru/,
+    apiName: "alldl",
+  },
+  Cloudinary: {
+    regex: /(?:https?:\/\/)?(?:www\.)?cloudinary\.com/,
+    apiName: "alldl",
+  },
+};
+
+  const apiNameEndpoint = (url) => {
+    for (const [platform, data] of Object.entries(allApisMain)) {
+      if (data.regex.test(url)) {
+        return data.apiName;
+      }
+    }
+    return null;
+  };
+
+  const url = event.messageReply?.body || args[0];
+
+  if (!url) {
+    return message.reply("❌ Please provide a URL or reply to a message containing a link.");
+  }
+
+  try {
+    const alldlBase = await alldApi();
+    const apiName = apiNameEndpoint(url);
+
+    if (!apiName) {
+      return message.reply("❌ Unsupported URL. Please provide a valid link.");
+    }
+
+    const { data } = await axios.get(
+      `${alldlBase}/nazrul/${apiName}?url=${encodeURIComponent(url)}`
+    );
+
+    const videoUrl = data?.videos?.[0]?.url || data?.url;
+
+    if (!videoUrl) {
+      throw new Error("Download link not found.");
+    }
+
+    const downloadPath = path.resolve(__dirname, "downloaded_video.mp4");
+
+    const writer = fs.createWriteStream(downloadPath);
+    const videoStream = (await axios.get(videoUrl, { responseType: "stream" })).data;
+
+    videoStream.pipe(writer);
+
+    writer.on("finish", async () => {
+      await api.sendMessage(
+        {
+          body: "Here's your downloaded video 🦆💨",
+          attachment: fs.createReadStream(downloadPath),
+        },
+        event.threadID,
+        () => {
+          fs.unlinkSync(downloadPath);
+        },
+        event.messageID
+      );
+    });
+
+    writer.on("error", (error) => {
+      api.sendMessage(`Error: ${error.message}`, event.threadID, event.messageID);
+    });
+  } catch (error) {
+    await api.sendMessage(`❌ Error: ${error.message}`, event.threadID, event.messageID);
+  }
+};
