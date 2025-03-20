@@ -6,7 +6,7 @@ const fs = require("fs-extra");
 module.exports = {
   config: {
     name: "system",
-    aliases: [],
+    aliases: ["syt"],
     version: "1.0",
     author: "SAIF 🐔",
     countDown: 5,
