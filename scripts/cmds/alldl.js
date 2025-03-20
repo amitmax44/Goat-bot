@@ -11,7 +11,7 @@ const alldApi = async () => {
 
 module.exports.config = {
   name: "alldl",
-  aliases: ["dl","dow", "download"],
+  aliases: ["dl", "download"],
   version: "1.6.9",
   author: "Nazrul",
   role: 0,
