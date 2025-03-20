@@ -1,6 +1,7 @@
 module.exports = {
   config: {
-    name: "wanted", // Name of command
+    name: "wanted",
+    aliases:["wan"],// Name of command
     version: "1.0", // Version of command
     author: "balls", // Author of command
     countDown: 5, // Time to wait before executing command again (seconds)
