@@ -6,7 +6,7 @@ module.exports = {
 	config: {
 		name: "welcome",
 		version: "1.7",
-		author: "NTKhang",
+		author: "Amit Max",
 		category: "events"
 	},
 
@@ -26,10 +26,10 @@ module.exports = {
 			session2: "noon",
 			session3: "afternoon",
 			session4: "evening",
-			welcomeMessage: "Thank you for inviting me to the group!\nBot prefix: %1\nTo view the list of commands, please enter: %1help",
+			welcomeMessage: "ᴛʜᴀɴᴋ ʏᴏᴜ ꜰᴏʀ ɪɴᴠɪᴛɪɴɢ ᴍᴇ ᴛᴏ ᴛʜᴇ ɢʀᴏᴜᴘ!\nʙᴏᴛ ᴘʀᴇꜰɪx: %1\nᴛᴏ ᴠɪᴇᴡ ᴛʜᴇ ʟɪꜱᴛ ᴏꜰ ᴄᴏᴍᴍᴀɴᴅ, ᴘʟᴇᴀꜱᴇ ᴇɴᴛᴇʀ: %1help",
 			multiple1: "you",
 			multiple2: "you guys",
-			defaultWelcomeMessage: `Hello {userName}.\nWelcome {multiple} to the chat group: {boxName}\nHave a nice {session} 😊`
+			defaultWelcomeMessage: `Your Baby😘 ▬▬▬▬▬▬▬▬▬▬▬▬▬ Dear {userName}.\nᴡᴇʟᴄᴏᴍᴇ ᴛᴏ {multiple} ᴛᴏ ᴛʜᴇ ᴄʜᴀᴛ ɢʀᴏᴜᴘ: {boxName}\nᴇxᴄɪᴛᴇᴅ ᴛᴏ ʜᴀᴠᴇ ʏᴏᴜ ᴊᴏɪɴ ᴜꜱ! ʟᴇᴛ'ꜱ ꜱʜᴀʀᴇ ɪᴅᴇᴀꜱ ᴀɴᴅ ᴄᴏɴɴᴇᴄᴛ.ꜰᴇᴇʟ ꜰʀᴇᴇ ᴛᴏ ᴊᴜᴍᴘ ɪɴ ᴀɴʏᴛɪᴍᴇ.ɪ ʜᴏᴘᴇ ʏᴏᴜ ᴡɪʟʟ ꜰᴏʟʟᴏᴡ ᴏᴜʀ ɢʀᴏᴜᴘ ʀᴜʟᴇꜱ ᴘʀᴏᴘᴇʀʟʏ.- ʜᴀᴠᴇ ᴀ ɴɪᴄᴇ{session} -ꔫ 🌊👀✰`
 		}
 	},
 
