@@ -29,7 +29,7 @@ module.exports = {
 			welcomeMessage: "ᴛʜᴀɴᴋ ʏᴏᴜ ꜰᴏʀ ɪɴᴠɪᴛɪɴɢ ᴍᴇ ᴛᴏ ᴛʜᴇ ɢʀᴏᴜᴘ!\nʙᴏᴛ ᴘʀᴇꜰɪx: %1\nᴛᴏ ᴠɪᴇᴡ ᴛʜᴇ ʟɪꜱᴛ ᴏꜰ ᴄᴏᴍᴍᴀɴᴅ, ᴘʟᴇᴀꜱᴇ ᴇɴᴛᴇʀ: %1help",
 			multiple1: "you",
 			multiple2: "you guys",
-			defaultWelcomeMessage: `Your Baby😘 ▬▬▬▬▬▬▬▬▬▬▬▬▬ Dear {userName}.\nᴡᴇʟᴄᴏᴍᴇ ᴛᴏ {multiple} : {boxName}\nᴇxᴄɪᴛᴇᴅ ᴛᴏ ʜᴀᴠᴇ ʏᴏᴜ ᴊᴏɪɴ ᴜꜱ! ʟᴇᴛ'ꜱ ꜱʜᴀʀᴇ ɪᴅᴇᴀꜱ ᴀɴᴅ ᴄᴏɴɴᴇᴄᴛ. ꜰᴇᴇʟ ꜰʀᴇᴇ ᴛᴏ ᴊᴜᴍᴘ ɪɴ ᴀɴʏᴛɪᴍᴇ. ɪ ʜᴏᴘᴇ ʏᴏᴜ ᴡɪʟʟ ꜰᴏʟʟᴏᴡ ᴏᴜʀ ɢʀᴏᴜᴘ ʀᴜʟᴇꜱ ᴘʀᴏᴘᴇʀʟʏ. - ʜᴀᴠᴇ ᴀ ɴɪᴄᴇ{session}  -ꔫ 🌊👀✰`
+			defaultWelcomeMessage: `🌊Mizuhara Chizuru😘 ▬▬▬▬▬▬▬▬▬ Dear {userName}.\nᴡᴇʟᴄᴏᴍᴇ ᴛᴏ {multiple} : {boxName}\nᴇxᴄɪᴛᴇᴅ ᴛᴏ ʜᴀᴠᴇ ʏᴏᴜ ᴊᴏɪɴ ᴜꜱ! ʟᴇᴛ'ꜱ ꜱʜᴀʀᴇ ɪᴅᴇᴀꜱ ᴀɴᴅ ᴄᴏɴɴᴇᴄᴛ. ꜰᴇᴇʟ ꜰʀᴇᴇ ᴛᴏ ᴊᴜᴍᴘ ɪɴ ᴀɴʏᴛɪᴍᴇ. ɪ ʜᴏᴘᴇ ʏᴏᴜ ᴡɪʟʟ ꜰᴏʟʟᴏᴡ ᴏᴜʀ ɢʀᴏᴜᴘ ʀᴜʟᴇꜱ ᴘʀᴏᴘᴇʀʟʏ. - ʜᴀᴠᴇ ᴀ ɴɪᴄᴇ{session}  -ꔫ 🌊👀✰`
 		}
 	},
 
