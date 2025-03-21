@@ -18,7 +18,7 @@ module.exports = {
 	onStart: async function ({ api, event }) {
 		try {
 			const ownerInfo = {
-				name: ' ʀɪꜱʜɪ ',
+				name: 'ᴀᴍɪᴛ ᴍᴀx ',
 				class: 'ɪɴᴛᴇʀ 1ꜱᴛ ',
 				group: 'ᴀᴄᴄᴏᴜɴᴛɪɴɢ ',
 				gender: 'ᴍᴀʟᴇ',
@@ -30,7 +30,7 @@ module.exports = {
 				Height: '5"6'
 			};
 
-			const bold = 'https://i.imgur.com/DpMSasE.mp4';
+			const bold = 'https://i.imgur.com/K0fgcmU.mp4';
 			const tmpFolderPath = path.join(__dirname, 'tmp');
 
 			if (!fs.existsSync(tmpFolderPath)) {
