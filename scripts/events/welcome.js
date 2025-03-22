@@ -26,10 +26,10 @@ module.exports = {
 			session2: "noon",
 			session3: "afternoon",
 			session4: "evening",
-			welcomeMessage: "ᴛʜᴀɴᴋ ʏᴏᴜ ꜰᴏʀ ɪɴᴠɪᴛɪɴɢ ᴍᴇ ᴛᴏ ᴛʜᴇ ɢʀᴏᴜᴘ!\nʙᴏᴛ ᴘʀᴇꜰɪx: %1\nᴛᴏ ᴠɪᴇᴡ ᴛʜᴇ ʟɪꜱᴛ ᴏꜰ ᴄᴏᴍᴍᴀɴᴅ, ᴘʟᴇᴀꜱᴇ ᴇɴᴛᴇʀ: %1help",
+			welcomeMessage: "🦋 ᴛʜᴀɴᴋ ʏᴏᴜ ꜰᴏʀ ɪɴᴠɪᴛɪɴɢ ᴍᴇ ᴛᴏ ᴛʜᴇ ɢʀᴏᴜᴘ!\nʙᴏᴛ ᴘʀᴇꜰɪx: %1\n🐱 ᴛᴏ ᴠɪᴇᴡ ᴛʜᴇ ʟɪꜱᴛ ᴏꜰ ᴄᴏᴍᴍᴀɴᴅ,🗣️ ᴘʟᴇᴀꜱᴇ ᴇɴᴛᴇʀ: %1help",
 			multiple1: "you",
 			multiple2: "you guys",
-			defaultWelcomeMessage: `🌊Mizuhara Chizuru😘 ▬▬▬▬▬▬▬▬▬ Dear {userName}.\nᴡᴇʟᴄᴏᴍᴇ ᴛᴏ {multiple} : {boxName}\nᴇxᴄɪᴛᴇᴅ ᴛᴏ ʜᴀᴠᴇ ʏᴏᴜ ᴊᴏɪɴ ᴜꜱ! ʟᴇᴛ'ꜱ ꜱʜᴀʀᴇ ɪᴅᴇᴀꜱ ᴀɴᴅ ᴄᴏɴɴᴇᴄᴛ. ꜰᴇᴇʟ ꜰʀᴇᴇ ᴛᴏ ᴊᴜᴍᴘ ɪɴ ᴀɴʏᴛɪᴍᴇ. ɪ ʜᴏᴘᴇ ʏᴏᴜ ᴡɪʟʟ ꜰᴏʟʟᴏᴡ ᴏᴜʀ ɢʀᴏᴜᴘ ʀᴜʟᴇꜱ ᴘʀᴏᴘᴇʀʟʏ. - ʜᴀᴠᴇ ᴀ ɴɪᴄᴇ{session}  -ꔫ 🌊👀✰`
+			defaultWelcomeMessage: `🌊Mizuhara Chizuru😘 ▬▬▬▬▬▬▬▬▬ Dear {userName}.\n☄️ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴛʜᴇ ɢʀᴏᴜᴘ ᴄʜᴀᴛ{multiple} : {boxName}\nᴇxᴄɪᴛᴇᴅ ᴛᴏ ʜᴀᴠᴇ ʏᴏᴜ ᴊᴏɪɴ ᴜꜱ! ʟᴇᴛ'ꜱ ꜱʜᴀʀᴇ ɪᴅᴇᴀꜱ ᴀɴᴅ ᴄᴏɴɴᴇᴄᴛ. ꜰᴇᴇʟ ꜰʀᴇᴇ ᴛᴏ ᴊᴜᴍᴘ ɪɴ ᴀɴʏᴛɪᴍᴇ. ɪ ʜᴏᴘᴇ ʏᴏᴜ ᴡɪʟʟ ꜰᴏʟʟᴏᴡ ᴏᴜʀ ɢʀᴏᴜᴘ ʀᴜʟᴇꜱ ᴘʀᴏᴘᴇʀʟʏ 🥀. - ʜᴀᴠᴇ ᴀ ɴɪᴄᴇ {session}   -ꔫ 🌊👀✰`
 		}
 	},
 
